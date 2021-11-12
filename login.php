@@ -1,11 +1,12 @@
 <?php
                     $servername = 'localhost';
-                    $dbUserName = 'root';
-                    $dbPassword = '';
-                    $dbName = 'publications';
+                    $dbUserName = 'tetratimeuser';
+                    $dbPassword = 'tetra@45930&~+)$!';
+                    $dbName = 'tetratimesheet';
+                    $port = 3306;
 
                     try {
-                    $dbh = new PDO("mysql:host=$servername;dbname=$dbName", $dbUserName, $dbPassword);
+                    $dbh = new PDO("mysql:host=$servername;port=$port;dbname=$dbName", $dbUserName, $dbPassword);
                     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  
                     
                     }
